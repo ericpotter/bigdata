@@ -34,3 +34,4 @@ plot(nov$代溃,type="b", pch=16, col="black",las=1,xlab="ら戳",
      ylab="溃",main="2017/11", axes=TRUE)
 plot(dec$放,type="o", pch=16, col="black",las=1,xlab="ら戳",
      ylab="放",main="2017/12", axes=TRUE)
+plot(放~label,w2017,las=1)
