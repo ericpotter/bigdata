@@ -1,23 +1,18 @@
 c=ChickWeight
-View(c)
-setwd("~/cwb")
 a=1:10
 b=1:10
 c=11:20
 str(a)
 c[,1]
-n=c[c$Chick == 48]
-c=ChickWeight
+ChickWeight[,c(1,4)]
+ChickWeight[,1]
+ChickWeight[,c("weight")]
+ChickWeight$weight
+ChickWeight[,c("weight","Diet")]
+ChickWeight[,c(1:3)]
 n=c[c$Chick == 48,]
 plot(n$weight)
-line(n$weight)
-plot(n$weight)
-line(n$weight)
 lines(n$weight)
 subset(ChickWeight,Chick==1)
-k=subset(ChickWeight,Chick==1,select=c(Time,weight))
-k
-View(k)
 k=subset(ChickWeight,Chick==48,select=c(Time,weight))
-View(k)
 boxplot(ChickWeight$weight ~ ChickWeight$Diet, las=1)
